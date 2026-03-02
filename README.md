@@ -2,6 +2,8 @@
 
 The **Playful Sparkle - Admin language** extension for OpenCart 3.x+ enhances the OpenCart 3.x administration interface by introducing a dedicated **language selection dropdown** directly in the admin header. This feature, designed to mimic the modern user experience of OpenCart 4.x, allows store owners and administrators to switch between installed languages instantly without navigating through system settings.
 
+![preview](https://github.com/user-attachments/assets/91dc260a-2d18-48df-a3f6-9a588c879ace)
+
 ---
 
 ## Features
