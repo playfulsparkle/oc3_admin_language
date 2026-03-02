@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is part of "Playful Sparkle - Admin language" project and subject to the terms
+and conditions defined in file "LICENSE", which is part of this source
+code package and also available on the project page: https://github.com/playfulsparkle/oc3_admin_language.git
+-->
+<modification>
+    <name>Playful Sparkle - Admin language</name>
+    <code>oc3_admin_language</code>
+    <version>1.0.0</version>
+    <author>Playful Sparkle</author>
+    <link>https://github.com/playfulsparkle/oc3_admin_language.git</link>
+    <file path="admin/controller/startup/startup.php">
+        <operation>
+            <search><![CDATA[public function index()]]></search>
+            <add position="before"><![CDATA[
+                /**
+                * @var array<string, array<string, string>>
+                */
+                private static array $languages = [];
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/startup/startup.php">
+        <operation>
+            <search><![CDATA[$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "language`]]></search>
+            <add position="before"><![CDATA[
+                if ($this->config->get('module_ps_admin_language_status')) {
+                    $this->load->model('localisation/language');
+
+                    self::$languages = $this->model_localisation_language->getLanguages();
+
+                    $language_info = array();
+
+                    // Set default language
+                    if (isset(self::$languages[$this->config->get('config_admin_language')])) {
+                        $language_info = self::$languages[$this->config->get('config_admin_language')];
+                    }
+
+                    // If cookie has language stored
+                    if (isset($this->request->cookie['language']) && isset(self::$languages[$this->request->cookie['language']])) {
+                        $language_info = self::$languages[$this->request->cookie['language']];
+                    }
+
+                    if ($language_info) {
+                        // Set the config language_id key
+                        $this->config->set('config_language_id', $language_info['language_id']);
+                        $this->config->set('config_admin_language', $language_info['code']);
+                    }
+                }
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/common/header.php">
+        <operation>
+            <search><![CDATA[$this->document->getTitle();]]></search>
+            <add position="after"><![CDATA[
+                if ($this->config->get('module_ps_admin_language_status')) {
+                    $this->document->addScript('view/javascript/ps_admin_language.js');
+                }
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/common/header.php">
+        <operation>
+            <search><![CDATA[$data['logged'] = true;]]></search>
+            <add position="after"><![CDATA[
+                if ($this->config->get('module_ps_admin_language_status')) {
+                    $data['ps_language'] = $this->load->controller('extension/module/ps_admin_language/list');
+                } else {
+                    $data['ps_language'] = '';
+                }]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/common/header.twig">
+        <operation>
+            <search><![CDATA[<ul class="nav navbar-nav navbar-right">]]></search>
+            <add position="after"><![CDATA[{% if ps_language %}<li id="nav-ps-admin-language" class="dropdown">{{ ps_language }}</li>{% endif %}]]></add>
+        </operation>
+    </file>
+</modification>

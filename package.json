@@ -1,0 +1,26 @@
+{
+  "name": "oc3_admin_language",
+  "version": "1.0.0",
+  "description": "Playful Sparkle - Admin language for OpenCart 3",
+  "main": "index.js",
+  "scripts": {
+    "compress": "node compress.js"
+  },
+  "keywords": [
+    "opencart",
+    "oc",
+    "playfulsparkle",
+    "admin",
+    "language"
+  ],
+  "author": "zsoltoroszlany82 <zsolt.oroszlany@playfulsparkle.com>",
+  "license": "GPL",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "fs": "^0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playfulsparkle/oc3_admin_language.git"
+  }
+}
