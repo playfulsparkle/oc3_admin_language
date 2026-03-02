@@ -162,7 +162,7 @@ class ControllerExtensionModulePsAdminLanguage extends Controller
             ];
         }
 
-        if (isset($this->request->cookie['language'])) {
+        if (isset($this->request->cookie['language']) && isset($results[$this->request->cookie['language']])) {
             $data['code'] = $this->request->cookie['language'];
         } else {
             $data['code'] = $this->config->get('config_admin_language');
@@ -184,7 +184,7 @@ class ControllerExtensionModulePsAdminLanguage extends Controller
         if ($url_data) {
             $url .= '&' . urldecode(http_build_query($url_data));
         }
-        ;
+
         $data['redirect'] = $this->url->link($route, $url);
 
         return $this->load->view('extension/module/ps_admin_language_list', $data);
