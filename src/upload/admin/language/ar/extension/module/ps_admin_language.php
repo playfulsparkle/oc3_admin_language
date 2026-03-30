@@ -7,7 +7,7 @@ $_['heading_contact']          = 'الاتصال بالدعم';
 $_['text_extension']           = 'الإضافات';
 $_['text_success']             = 'تم بنجاح: لقد قمت بتعديل موديول لغة الأدمن!';
 $_['text_edit']                = 'تعديل موديول لغة الأدمن';
-$_['text_contact']             = '<p>لمزيد من المساعدة، يرجى التواصل مع فريق الدعم لدينا:</p><ul><li><strong>اتصال:</strong> <a href="mailto:%s">%s</a></li><li><strong>الوثائق:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">وثائق المستخدم</a></li></ul>';
+$_['text_contact']             = '<p>للمزيد من المساعدة، يرجى التواصل مع فريق الدعم لدينا:</p><ul><li><strong>موقع الدعم:</strong> <a href="%1$s">%1$s</a></li><li><strong>مستودع GitHub:</strong> <a href="%2$s" target="_blank" rel="noopener noreferrer">%2$s</a></li><li><strong>الاتصال بالدعم:</strong> <a href="mailto:%3$s">%3$s</a></li></ul>';
 
 // Tab
 $_['tab_general']              = 'عام';

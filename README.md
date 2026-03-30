@@ -11,7 +11,7 @@ The **Playful Sparkle - Admin language** extension for OpenCart 3.x+ enhances th
 - **Quick Language Switching**: Adds a convenient dropdown menu to the admin header for one-click language changes.
 - **Seamless Integration:** Designed to look and feel like a native part of your dashboard without cluttering the workspace.
 - **Compatibility**: Integrates smoothly with OpenCart 3.x+, supporting a range of online store setups.
-- **Multilingual Support**: Ready for international use with languages including العربية (ar), Български (bg), 中文(简体) (zh-cn), 中文(繁體) (zh-tw), Čeština (cs-cz), English (UK) (en-gb), English (US) (en-us), Français (fr-fr), Deutsch (de-de), Ελληνικά (el-gr), Magyar (hu-hu), Italiano (it-it), 日本語 (ja), 한국어 (ko-kr), Polski (pl-pl), Português (Brasil) (pt-br), Русский (ru-ru), Slovenčina (sk-sk), Español (es-es), and Türkçe (tr-tr).
+- **Multilingual Support**: Ready for international use with languages including العربية (ar), فارسی (fa-ir), Български (bg), 中文(简体) (zh-cn), 中文(繁體) (zh-tw), Čeština (cs-cz), English (UK) (en-gb), English (US) (en-us), Français (fr-fr), Deutsch (de-de), Ελληνικά (el-gr), Magyar (hu-hu), Italiano (it-it), 日本語 (ja), 한국어 (ko-kr), Polski (pl-pl), Português (Brasil) (pt-br), Русский (ru-ru), Slovenčina (sk-sk), Español (es-es), and Türkçe (tr-tr).
 
 ---
 
@@ -30,7 +30,7 @@ The **Playful Sparkle - Admin language** extension for OpenCart 3.x+ enhances th
 
 ## Support & Inquiries
 
-For assistance or inquiries related to this extension, please open an issue on this repository or contact us via email at [support@playfulsparkle.com](mailto:support@playfulsparkle.com).
+For assistance or inquiries related to this extension, please open an issue on this repository, visit our [url=https://support.playfulsparkle.com]support website[/url], or contact us via email at [support@playfulsparkle.com](mailto:support@playfulsparkle.com).
 
 ---
 

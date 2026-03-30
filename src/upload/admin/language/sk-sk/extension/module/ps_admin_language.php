@@ -7,7 +7,7 @@ $_['heading_contact']          = 'Kontaktovať podporu';
 $_['text_extension']           = 'Rozšírenia';
 $_['text_success']             = 'Úspech: Upravili ste modul Jazyk administrácie!';
 $_['text_edit']                = 'Upraviť modul Jazyk administrácie';
-$_['text_contact']             = '<p>Ak potrebujete ďalšiu pomoc, obráťte sa na náš tím podpory:</p><ul><li><strong>Kontakt:</strong> <a href="mailto:%s">%s</a></li><li><strong>Dokumentácia:</strong> <a href="%s" target="_blank" rel="noopener noreferrer">Používateľská dokumentácia</a></li></ul>';
+$_['text_contact']             = '<p>Ak potrebujete ďalšiu pomoc, obráťte sa na náš tím podpory:</p><ul><li><strong>Webová stránka podpory:</strong> <a href="%1$s">%1$s</a></li><li><strong>GitHub repozitár:</strong> <a href="%2$s" target="_blank" rel="noopener noreferrer">%2$s</a></li><li><strong>Kontaktovať podporu:</strong> <a href="mailto:%3$s">%3$s</a></li></ul>';
 
 // Tab
 $_['tab_general']              = 'Všeobecné';
