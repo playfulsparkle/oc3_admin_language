@@ -8,7 +8,7 @@
   },
   "keywords": [
     "opencart",
-    "oc",
+    "opencart3",
     "playfulsparkle",
     "admin",
     "language",
@@ -16,12 +16,12 @@
   ],
   "author": "zsoltoroszlany82 <zsolt.oroszlany@playfulsparkle.com>",
   "license": "GPL",
-  "dependencies": {
-    "archiver": "^7.0.1",
-    "fs": "^0.0.1-security"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/playfulsparkle/oc3_admin_language.git"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "fs": "^0.0.1-security"
   }
 }
