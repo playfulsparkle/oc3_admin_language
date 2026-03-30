@@ -133,9 +133,9 @@ class ControllerExtensionModulePsAdminLanguage extends Controller
             setcookie('language', $code, time() + 60 * 60 * 24 * 30, '/');
 
             if ($this->request->server['HTTPS']) {
-                $config_url = HTTPS_CATALOG;
+                $config_url = HTTPS_SERVER;
             } else {
-                $config_url = HTTP_CATALOG;
+                $config_url = HTTP_SERVER;
             }
 
             if ($redirect && strpos($redirect, $config_url) === 0) {
@@ -152,19 +152,19 @@ class ControllerExtensionModulePsAdminLanguage extends Controller
     public function list()
     {
         // Language
-        $data['languages'] = [];
+        $data['languages'] = array();
 
         $this->load->model('localisation/language');
 
         $results = $this->model_localisation_language->getLanguages();
 
         foreach ($results as $result) {
-            $data['languages'][] = [
+            $data['languages'][] = array(
                 'href' => 'index.php?route=extension/module/ps_admin_language/save&user_token=' . $this->session->data['user_token'],
                 'name' => $result['name'],
                 'code' => $result['code'],
                 'image' => 'language/' . $result['code'] . '/' . $result['code'] . '.png'
-            ];
+            );
         }
 
         if (isset($this->request->cookie['language']) && isset($results[$this->request->cookie['language']])) {
