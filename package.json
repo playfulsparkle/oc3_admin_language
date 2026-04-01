@@ -9,10 +9,13 @@
   "keywords": [
     "opencart",
     "opencart3",
+    "opencart-extension",
     "playfulsparkle",
     "admin",
-    "language",
-    "dropdown"
+    "admin-language",
+    "language-switcher",
+    "dropdown",
+    "multilingual"
   ],
   "author": "zsoltoroszlany82 <zsolt.oroszlany@playfulsparkle.com>",
   "license": "GPL",
